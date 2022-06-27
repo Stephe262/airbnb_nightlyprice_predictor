@@ -13,26 +13,24 @@
 ## Data Cleaning
 After scraping the data, I needed to clean it up so that it was usable for our model. I made the following changes and created the following variables:
 
-*	Parsed numeric data out of salary 
-*	Made columns for employer provided salary and hourly wages 
-*	Removed rows without salary 
-*	Parsed rating out of company text 
-*	Made a new column for company state 
-*	Added a column for if the job was at the company’s headquarters 
-*	Transformed founded date into age of company 
-*	Made columns for if different skills were listed in the job description:
-    * Python  
-    * R  
-    * Excel  
-    * AWS  
-    * Spark 
-*	Column for simplified job title and Seniority 
-*	Column for description length 
+* Parse nightly price column to remove $ symbol
+* dropped all rows with more than 30 beds
+* Parsed bathroom columns and create new column with just number of baths
+* added new column with listing description length
+* added new column for how many years people have been a host
+* created new columns for true/false columns (1's and 0's) --> superhost, identity_verified, instant_book
+* remove unecessary columns and rows (number_of_reviews == 0, reviews per month > 30, host_response_time isna, etc.)   
+
+
 
 ## EDA
 I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the pivot tables. 
 
-!!!!PHOTOS OF EDA HERE!!!!
+![alt text]()
+![alt text]()
+![alt text]()
+
+
 
 ## Model Building 
 
