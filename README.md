@@ -29,7 +29,7 @@ I looked at the distributions of the data and the value counts for the various c
 ![alt text](https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/05ee2f9b8f1815f7ffda2d2204c65e3243b4b5b3/eda1.png)
 ![alt text](https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/05ee2f9b8f1815f7ffda2d2204c65e3243b4b5b3/eda2.png)
 ![alt text](https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/05ee2f9b8f1815f7ffda2d2204c65e3243b4b5b3/eda3.png)
-![alt text](https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/05ee2f9b8f1815f7ffda2d2204c65e3243b4b5b3/eda4.png)
+![alt text](https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/e0dc97a656ec8d56f3f9b0bb67c07caa0b9a0bf7/eda4.png)
 
 
 
