@@ -59,7 +59,7 @@ The Stacking Regressor Ensemble Performed the best by just a slight margin compa
 
 Interestingly enough, I ran the feature importance function from XGBoost and discovred that Longitude and Latitude were the most important. Although this is not very surprising as real estate prices fluctuate throughout the US. I feel that I could perhaps acheive a more accurate model if I collected more data which was more representative of most all cities throughout the US. Also, I perhaps could fine tune some of the features a bit more and remove clear outliers in the data. I would have like to see a much smaller RMSE number, in the range of 10-20. 
 
-<img src="https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/b3b89e65307e2c16df5e591ba0c502bfcdcca088/feature_importance.png" width=500 height=500>
+<img src="https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/b3b89e65307e2c16df5e591ba0c502bfcdcca088/feature_importance.png" width=1000 height=500>
 
 ## Productionization 
 I built a Flask interface in order to host this model. This will take you to an interactive display in which AirBnB hosts can enter in their information in order to receive a price for their AirBnB.
