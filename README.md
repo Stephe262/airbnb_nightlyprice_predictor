@@ -36,9 +36,9 @@ Here a few different snapshots from my EDA including a few scatterplot and a hea
 
 After EDA I looked into related features a bit further in order to eliminate multicillinearity. Once I was happy with that result, I proceeded to One Hot Encode categorical variable as well as my new created binned variables. Following this, I split the data into train and test sets, using 20% as test size.
 
-I tried three different models and evaluated them using Mean Absolute Error. I chose MAE because it is relatively easy to interpret and outliers aren’t particularly bad in for this type of model.   
+I tried three different models and evaluated them using Root Mean Squared Error. 
 
-I tried a number of different models:
+List of models:
 * **Multiple Linear Regression**
 * **Lasso Regression**
 * **SVR**
