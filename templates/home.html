@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}
+    Home Page
+{% endblock %}
 
-</body>
-</html>
+
+{% block body %}
+<br>
+<h1 style="text-align:center">Welcome to My Data Science Portfolio Website</h1>
+<h4 style="text-align:center">Below is My Resume</h4>
+<br>
+<iframe src="https://drive.google.com/file/d/13dW7PoRqp7XGBjI9KBKGe2bRcQhZZNpM/preview"
+            width="100%" height="1000px" allow="autoplay"></iframe>
+{% endblock %}
+
+
+{% block content %}
+{% endblock %}
