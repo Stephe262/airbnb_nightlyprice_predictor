@@ -1,0 +1,254 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBnB Price Predictor</title>
+
+
+    <!-- BootStrap -->
+    <style>
+    <link rel="stylesheet" href='style.css' />
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+    input[type=button], input[type=submit], input[type=reset] {
+      background-color: mediumseagreen;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+        font-size: x-large;
+    }
+    body {
+        background-color: #3f3f3f;
+}
+    h1, h2, h3, h4, h6{
+        color: white;
+}
+    form {
+        font-family: 'handwriting';
+        color: midnightblue;
+    }
+    div[class=card] {
+        background-color: lightgray;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+<br>
+   <body>
+      <h1 style="text-align:center">AirBnB Price Predictor</h1>
+      <h4 style="text-align:center">Enter your choices below</h4>
+   </body>
+<br>
+
+    <div class="container">
+
+        <form action="\predict" method="post">
+
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <h5 class="card-title">City</h5>
+                            <input type="text" name="City" id="City" required="required">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Listings</h5>
+                            <input type="number" min="0" max="100" name="host_listings_count" id="host_listings_count" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Number of Bedrooms</h5>
+                            <input type="number" min="0" max="50" name="beds" id="beds" required="required">
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Number of Bathrooms</h5>
+                            <input type="number" min="1" max="50" step="0.5" name="bath_count" id="bath_count" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Minimum Nights Allowed</h5>
+                            <input type="number" min="1" max="60" name="minimum_nights" id="minimum_nights" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Maximum Nights Allowed</h5>
+                            <input type="number" min="1" max="300" name="maximum_nights" id="maximum_nights" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Availability next 30 Days</h5>
+                            <input type="number" min="0" max="30" name="availability_30" id="availability_30" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Rating</h5>
+                            <input type="number" step="0.01" min="0" max="5" name="review_scores_rating" id="review_scores_rating" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Reviews Per Month</h5>
+                            <input type="number" min="1" max="30" step="0.1" name="reviews_per_month" id="reviews_per_month" required="required">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Years of Being a Host</h5>
+                            <input type="number" min="0" max="20" name="years_host" id="years_host" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Are you a Superhost?</h5>
+                            <select name="superhost_tf" id="superhost_tf" required="required">
+                                <option value="Yes">Yes</option>
+                                <option value="No">Not Yet!</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Do you have ID Verification?</h5>
+                            <select name="id_verified_tf" id="id_verified_tf" required="required">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Can Guests Book Reservations Instantly?</h5>
+                            <select name="instant_book_tf" id="instant_book_tf" required="required">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Room Type</h5>
+                            <select name="room_type" id="room_type" required="required">
+                                <option value="Entire House/Apt">Entire House/Apt</option>
+                                <option value="Hotel Room">Hotel Room</option>
+                                <option value="Private Room">Private Room</option>
+                                <option value="Shared Room">Shared Room</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Host Response Time</h5>
+                            <select name="host_response_time" id="host_response_time" required="required">
+                                <option value="Within an Hour">Within an Hour</option>
+                                <option value="Within a Few Hours">Within a Few Hours</option>
+                                <option value="Within a Day">Within a Day</option>
+                                <option value="Within a few Days or More">Within a Few Days or More</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Host Response Rate (in percentage)</h5>
+                            <input type="number" min="0" max="100" step="0.1" name="host_response_rate" id="host_response_rate" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Host Acceptance Rate (in percentage)</h5>
+                            <input type="number" min="0" max="100" step="0.1" name="host_acceptance_rate" id="host_acceptance_rate" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <input type="submit" value="Predict the Price" class="btn-outline-success">
+        </form>
+
+    </div>
+
+    <body>
+    <h6 style="text-align:center"></h6>
+    <br>
+    </body>
+
+    <body>
+        <h2 style="text-align:center">{{ prediction_text }}</h2>
+    <br>
+    <br>
+        <h6 style="text-align:center">Nolan Stephenson</h6>
+    </body>
+
+
+</body>
+
+</html>
