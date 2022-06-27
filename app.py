@@ -263,7 +263,7 @@ def predict():
 
         output=round(prediction[0], 2)
 
-        return render_template('bnbprice.html',prediction_text="The Predicted Price for the AirBnB is ${}".format(output))
+        return render_template('bnbprice.html',prediction_text="The Predicted Price for your AirBnB is ${}".format(output))
 
     return render_template("bnbprice.html")
 
