@@ -26,7 +26,7 @@ The following is a list of changes I made to certain features
 ## EDA
 Here a few different snapshots from my EDA including a few scatterplot and a heatmap
 
-<img src="https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/05ee2f9b8f1815f7ffda2d2204c65e3243b4b5b3/eda1.png" width=500 height=500><br><img src="https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/05ee2f9b8f1815f7ffda2d2204c65e3243b4b5b3/eda2.png" width=500 height=500>
+<img src="https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/05ee2f9b8f1815f7ffda2d2204c65e3243b4b5b3/eda1.png" width=1000 height=500><br><img src="https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/05ee2f9b8f1815f7ffda2d2204c65e3243b4b5b3/eda2.png" width=500 height=500>
 <img src="https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/05ee2f9b8f1815f7ffda2d2204c65e3243b4b5b3/eda3.png" width=500 height=500>
 <img src="https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/e0dc97a656ec8d56f3f9b0bb67c07caa0b9a0bf7/eda4.png" width=500 height=500>
 
