@@ -63,4 +63,4 @@ Interestingly enough, I ran the feature importance function from XGBoost and dis
 ## User Interface
 I built a Flask interface in order to host this model. This will take you to an interactive display in which AirBnB hosts can enter in their information in order to receive a price for their AirBnB.
 
-<img src="https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/05ee2f9b8f1815f7ffda2d2204c65e3243b4b5b3/eda1.png" width=1000 height=500>
+<img src="https://github.com/Stephe262/airbnb_nightlyprice_predictor/blob/bda3da5c3feb2a37b7ac5359b41806521517ac17/user_interface.png" width=1000 height=1000>
