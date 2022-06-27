@@ -4,7 +4,21 @@
 {% endblock %}
 
 {% block body %}
+<br>
  <h1 style="text-align: center">Below are links to a few of my projects that are hosted on GitHub</h1>
+<br>
+<br>
+<a href="https://github.com/Stephe262/airbnb_nightlyprice_predictor.git"><h3>AirBnB Price Prediction</h3></a>
+<h4>Overview of the Project</h4>
+<h6><ul>
+    <li>Created a model that predicts the nightly price of an AirBnB to help hosts have an idea of what price they should use.</li>
+    <li>This model looks at data from various different cities across the US (Austin, Boston, Chicago, Denver, Nashville, Portland, San Diego, Asheville, Seattle, NYC, New Orleans, Los Angles, and Dallas)</li>
+    <li>Binned features (Host Acceptance Rate & Host Response Rate) that contained percentages (ranging from 0-100%) into 6 bins respectively.</li>
+    <li>Optimized Random Forest, Gradient Boosted Trees, and XGBoost using GridsearchCV to reach the best model.</li>
+    <li>Added these 3 best performing model to a Stacking Regressor to create an ensemble which performed even better</li>
+    <li>Built a user interface website using flask which includes and interactive modeling page</li>
+</ul></h6>
+
 {% endblock %}
 
 {% block content %}
