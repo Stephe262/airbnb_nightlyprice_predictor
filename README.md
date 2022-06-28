@@ -13,13 +13,14 @@
 ## Data Cleaning
 The following is a list of changes I made to certain features
 
-* Parse nightly price column to remove $ symbol
-* dropped all rows with more than 30 beds
-* Parsed bathroom columns and create new column with just number of baths
-* added new column with listing description length
-* added new column for how many years people have been a host
-* created new columns for true/false columns (1's and 0's) --> superhost, identity_verified, instant_book
-* remove unecessary columns and rows (number_of_reviews == 0, reviews per month > 30, host_response_time isna, etc.)   
+* Parsed the nightly price column to remove the ‘$’ symbol
+* Dropped all rows(listings) with more than 30 beds
+* Parsed bathroom columns and created a new column with just number of baths
+* Added new column with listing description length (in characters)
+* Added new column for how many years people have been a host
+* Created new columns for true/false columns (1's and 0's) --> superhost, identity_verified, instant_book
+* Removed unnecessary columns and rows (number_of_reviews == 0, reviews per month > 30, host_response_time isna, etc.)
+
 
 
 
