@@ -1,7 +1,7 @@
 import pandas as pd
 
 #read in master df for all cleaned data
-df = pd.read_csv('/Users/nolanstephenson/DTSC_courses/691/final_df.csv')
+df = pd.read_csv('final_df.csv')
 
 ## Import ML libraries
 from sklearn.model_selection import train_test_split
